@@ -8,4 +8,10 @@ public class curatorOfPractice {
             return false;
         }
     }
+    public void menu(){
+        System.out.println("CHOOSE AN OPTION ,YOU WANT TO DO" +
+                "1-CREATING PROFILE" +
+                "2-FILLING A LIST WITH STUDENTS" +
+                "3-EXIT");
+    }
 }

@@ -1,4 +1,6 @@
+import java.util.*;
 public class Teacher {
+    Scanner scanner=new Scanner(System.in);
     String password="qwerty";
     String login="teacher";
     public boolean verification(String password,String login){
@@ -7,5 +9,16 @@ public class Teacher {
         }else{
             return false;
         }
+    }
+    public void addingTask(){
+        System.out.println("ENTER YOUR TASK");
+        String task=scanner.nextLine();
+    }
+    public void menu(){
+        System.out.println("CHOOSE AN OPTION ,YOU WANT TO DO" +
+                "1-ADDING AND PUBLISHING TASKS" +
+                "2-ASSESSMENT OF TASKS" +
+                "3-PROVIDING FEEDBACK" +
+                "4-EXIT");
     }
 }

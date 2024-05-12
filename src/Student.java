@@ -8,4 +8,11 @@ public class Student {
             return false;
         }
     }
+    public void menu(){
+        System.out.println("CHOOSE AN OPTION ,YOU WANT TO DO" +
+                "1-VIEWING ASSESSMENT" +
+                "2-COMPLETING TASKS" +
+                "3-VIEWING GRADES" +
+                "4-EXIT");
+    }
 }
