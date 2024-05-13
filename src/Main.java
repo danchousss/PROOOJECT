@@ -2,7 +2,7 @@ import java.util.*;
 import java.sql.*;
 public class Main {
     private static final String url = "jdbc:mysql://localhost:3306/products";
-
+//fiv
     private static final String username = "root";
 
     private static final String password = "Dzharkynbaev27";
@@ -24,10 +24,11 @@ public class Main {
         while (isTrue){
         String password=scanner.nextLine();
         String login= scanner.nextLine();
-        if(teacher.verification(password,login)==true){
+        if(teacher.verification(password,login)){
             teacher.menu();
             int choiceOfTeacher= scanner.nextInt();
             if(choiceOfTeacher==1){
+
 
             }else if(choiceOfTeacher==2){
 
@@ -39,7 +40,7 @@ public class Main {
                 System.out.println("╰--------------------------------------------------╯");
             }
             isTrue=false;
-        }else if(student.verification(password,login)==true){
+        }else if(student.verification(password,login)){
             student.menu();
             int choiceOfStudent = scanner.nextInt();
             if(choiceOfStudent==1){
@@ -52,7 +53,7 @@ public class Main {
                 System.out.println("╰--------------------------------------------------╯");
             }
             isTrue=false;
-        } else if (systemAdministrator.verification(password,login)==true) {
+        } else if (systemAdministrator.verification(password,login)) {
             systemAdministrator.menu();
             int choiceOfSystemAdministrator= scanner.nextInt();
             if(choiceOfSystemAdministrator==1){
@@ -89,7 +90,6 @@ public class Main {
 
         }
         }
-
         }
         catch (ClassNotFoundException | SQLException e) {
             e.printStackTrace();
